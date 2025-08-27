@@ -1,0 +1,115 @@
+/*1- Definição das variáveis de cor*/
+:root{
+    --cor-fundo:#f0f2f5;
+    --cor-branco:#fff;
+    --cor-texto-primario:#1c1e21;
+    --cor-texto-secundario:#606770;
+    --cor-borda:#dcdfe3;
+    --cor-acento:#007bff;
+}
+/* 2- Reset CSS Definição das configuração globais */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: bordedr-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacsystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--cor-fundo);
+
+/* Centralizando o componente na página para visualização */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+
+/* 3 -Estilização do Componente Principal .card */
+
+.card{
+    background-color :var(--cor-branco);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    width: 320px;
+    /* Aqui que começa a mágica da transformação */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Esconder qualquer contúdo filho que possivelmente saia dos limites do card */
+    overflow: hiden;
+    text-align: center;
+}
+
+/* efeito de Holver no card */
+.card:hover{
+    /* movimenta o card para cima em 10px */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+.card_image-container{
+    width: 100%;
+    height: 250px;
+    /* altura fixa para o container da imagem */
+    
+}
+
+.card_image{
+    width:100%;
+    height: 100%;
+     object-fit: cover;/* Cobre todo o container mantendo a proporção/ Garante que a imagem cubra o espaço 
+     sem distorçer */
+    border-radius: 5% 5% 0% 0%;
+}
+
+/* 6 -Estilos do Título do Card, Inform,ações(Nome, Titulo e Social) */
+.card_info{
+    padding: 24px;
+}
+
+.card_name{
+    font-size: 1rem; /*16px*/
+    color: var(--cor-texto-primario);
+    margin-bottom: 8px;
+}
+
+.card_title{
+    font-size: 1rem; /*16px*/
+    color: var(--cor-texto-secundario);
+    margin-bottom: 16px;
+}
+ /* 7 -Estilo dos Ícones  sociais(utilizando o flexbox) */
+ .card_social{
+    display: flex; /*Aticando o flexbox*/
+    justify-content:center; /*Centralizando os itens no eixo principal(horizontal)*/
+    gap: 16px;
+ }
+
+ .card_social a{
+    display: flex; /*Ativa o flexbox para os links*/
+    align-items: center; /*Centralizando os itens no eixo cruzado(vertical)*/
+    justify-content: center; /*centraliza os itens no eixo principal(horizontal)*/
+    color: var(--cor-acento);
+    width: 40px;
+    height: 40px;
+    text-decoration:none;
+    transition: background-color 0.3s ease, color 0.3 ease;
+    border: 2px solid var(--cor-acento);
+    border-radius: 50%;
+    font-weight: bold;
+ }
+
+ .card_social a:hover{
+    background-color: var(--cor-acento);
+    color: var(--cor-branco);
+    border-color: var(--cor-acento);
+ }
+
+ /* 8 -Design Responsivo(Primeira Media Query) */
+
+ @media(max-widht: 400px){
+    .card{
+        width: 90%; /*O card ocupará 90% da largura da tela */
+    }
+ }

@@ -2,7 +2,9 @@ Projeto 02 - Card de Apresentação
 
 Este projeto dá continuidade aos fundamentos de front-end, introduzindo o uso de imagens dentro de um layout estruturado.
 
-🚀 Sobre o ProjetoEste projeto consiste em uma landing page com um "card" de apresentação. Ele exibe uma imagem pessoal e dois ícones interativos que direcionam o usuário para minhas redes profissionais: LinkedIn e GitHub.
+🚀 Sobre o Projeto:
+
+Este projeto consiste em uma landing page com um "card" de apresentação. Ele exibe uma imagem pessoal e dois ícones interativos que direcionam o usuário para minhas redes profissionais: LinkedIn e GitHub.
 
 🛠️ Tecnologias e Conceitos Abordados
 

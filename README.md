@@ -4,7 +4,7 @@ Este projeto dá continuidade aos fundamentos de front-end, introduzindo o uso d
 🚀 Sobre o ProjetoEste projeto consiste em uma landing page com um "card" de apresentação. Ele exibe uma imagem pessoal e dois ícones interativos que direcionam o usuário para minhas redes profissionais: LinkedIn e GitHub.
 
 🛠️ Tecnologias e Conceitos Abordados
-####HTML5:
+HTML5:
 Introdução à tag semantica <article> que é usada para demarcar um conteúdo independente e autossuficiente..
 Ênfase na importância de textos alternativos (alt) para acessibilidade e SEO.
 CSS3:
